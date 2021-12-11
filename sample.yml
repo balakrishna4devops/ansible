@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: i want to install git
+    apt:
+     name: git
+     status: present
+  - name: i want to install webserver
+    apt:
+      name: webserver
+      status: present
+  - name: i want to install webbrowser
+    apt:
+      name: webbrowser
+      status: present  
